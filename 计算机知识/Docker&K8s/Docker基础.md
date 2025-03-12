@@ -12,7 +12,7 @@
 
 只打包**软件和系统依赖库加配置**，然后将这部分系统文件挂到 ecs 的操作系统下，利用一个叫 **Namespace** 的能力让它看起来就像是一个独立操作系统一样。再利用一个叫 **Cgroup** 的能力限制它能使用的计算资源。这就省掉了一层笨重的操作系统，同时还让软件轻松跑在各类操作系统上。这就是我们常说的 **Docker 容器技术**。
 
-![图片](.\image\Docker简介.webp)
+![图片](https://raw.githubusercontent.com/luke-zidong/knowledge-base/refs/heads/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker%26K8s/image/Docker%E7%AE%80%E4%BB%8B.webp)
 
 ## 基础镜像
 
@@ -38,7 +38,7 @@
 
 传统虚拟机自带一个完整操作系统，而容器本身不带完整操作系统，容器的基础镜像实际上只包含了操作系统的核心依赖库和配置文件等必要组件。它利用一个叫 **Namespace** 的能力让它看起来就像是一个独立操作系统一样。再利用一个叫 **Cgroup** 的能力限制它能使用的计算资源。
 
-![图片](.\image\Docker和虚拟机.webp)
+![图片](https://raw.githubusercontent.com/luke-zidong/knowledge-base/refs/heads/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker%26K8s/image/Docker%E5%92%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.webp)
 
 所以说，容器本质上只是个自带独立运行环境的**特殊进程**，底层用的其实是**宿主机的操作系统内核**。
 
@@ -46,17 +46,17 @@
 
 Docker 的架构原理是经典的 Client/Server 架构。Client 对应 Docker-cli， Server 对应 Docker daemon。我们在命令行里敲 Docker 命令，使用的就是 Docker-cli.
 
-![Docker架构简图](.\image\Docker架构简图.webp)
+![Docker架构简图](https://raw.githubusercontent.com/luke-zidong/knowledge-base/refs/heads/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker%26K8s/image/Docker%E6%9E%B6%E6%9E%84%E7%AE%80%E5%9B%BE.webp)
 
 Docker-cli 会解析我们输入的 cmd 命令，然后调用 Docker daemon 守护进程提供的 RESTful API，守护进程收到命令后，会根据指令创建和管理各个容器。再具体点，Docker Daemon 内部分为 Docker Server、Engine 两层。Docker Server 本质上就是个 HTTP 服务，负责对外提供操作容器和镜像的 api 接口，接收到 API 请求后，会分发任务给 Engine 层，Engine 层负责创建 Job，由 Job 实际执行各种工作。
 
-![Docker架构简图](.\image\Docker后台.webp)
+![Docker架构简图](https://raw.githubusercontent.com/luke-zidong/knowledge-base/refs/heads/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker%26K8s/image/Docker%E5%90%8E%E5%8F%B0.webp)
 
 不同的 Docker 命令会执行不同类型的 Job 任务。
 
 **整体架构如下：**
 
-![Docker架构](.\image\Docker架构.jpg)
+![Docker架构](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker&K8s/image/Docker%E6%9E%B6%E6%9E%84.jpg?raw=true)
 
 
 
