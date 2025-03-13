@@ -101,10 +101,14 @@ Docker 解决的是**一个容器**的部署。Docker Compose 解决的是**多�
 - Docker 软件 通过 Dockerfile 描述环境和应用程序的依赖关系， docker build 构建镜像， docker pull/push 跟 Docker Registry 交互实现存储和分发镜像，docker run 命令基于镜像启动容器，基于容器技术运行程序和它对应的环境，从而解决环境依赖导致的各种问题。
 - Docker 解决的是**一个容器**的部署问题，Docker Compose 解决的是**多个容器组成的一套服务**的部署问题，Docker Swarm 解决的是多个容器组成的**一套服务在多台服务器上的部署问题**，k8s 则是 Docker Swarm 的竞品，在更高维度上**兼容**了 Docker 容器，实现了容器编排调度。
 
-## 参考
+## 相关学习文章
 
 [Docker和传统虚拟机有什么区别](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247534049&idx=2&sn=1ef2674ddb3217bbafcb5cd6946407ac&chksm=f98d014bcefa885d6b68c0405718abf634a33427264a8ae4d04bc478bc03121dbfdceed7012e&token=630123097&lang=zh_CN#rd)
 
 [Docker 和 k8s 之间是什么关系](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247534155&idx=2&sn=d9a02a778656b968340f4ea0993d57e5&chksm=f98d02e1cefa8bf761e19bd337678c31bf9aa62eb4d668b3358d9ab3ac9300ca8023a26a03d1&token=630123097&lang=zh_CN#rd)
 
 [Docker入门](https://www.imooc.com/learn/867)
+
+[Docker 从入门到实践](https://vuepress.mirror.docker-practice.com/)
+
+[由浅入深吃透 Docker-完](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1%E5%90%83%E9%80%8F%20Docker-%E5%AE%8C)
