@@ -10,7 +10,7 @@
 
 ## Docker 数据管理
 
-![Docker数据挂载](D:\githubRepository\knowledge-base\计算机知识\Docker&K8s\image\Docker数据挂载.png)
+![Docker数据挂载](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker&K8s/image/Docker%E6%95%B0%E6%8D%AE%E6%8C%82%E8%BD%BD.png?raw=true)
 
 在容器中管理数据主要有两种方式：
 
