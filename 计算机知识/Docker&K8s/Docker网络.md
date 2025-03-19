@@ -402,7 +402,7 @@ $ ip addr show bridge0
 
 # 举例
 
-![Docker网桥例子]([D:\githubRepository\knowledge-base\计算机知识\Docker&K8s\image\Docker网桥例子.webp](https://raw.githubusercontent.com/luke-zidong/knowledge-base/refs/heads/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker%26K8s/image/Docker%E7%BD%91%E6%A1%A5%E4%BE%8B%E5%AD%90.webp))
+![Docker网桥例子](https://raw.githubusercontent.com/luke-zidong/knowledge-base/refs/heads/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker%26K8s/image/Docker%E7%BD%91%E6%A1%A5%E4%BE%8B%E5%AD%90.webp)
 
 
 
