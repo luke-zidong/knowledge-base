@@ -201,7 +201,7 @@ nameserver 8.8.8.8
 
 当创建一个 Docker 容器的时候，同时会创建了一对 `veth pair` 接口（当数据包发送到一个接口时，另外一个接口也可以收到相同的数据包）。这对接口一端在容器内，即 `eth0`；另一端在本地并被挂载到 `docker0` 网桥，名称以 `veth` 开头（例如 `vethAQI2QT`）。通过这种方式，主机可以跟容器通信，容器之间也可以相互通信。Docker 就创建了在主机和所有容器之间一个虚拟共享网络。
 
-![Docker网络](D:\githubRepository\knowledge-base\计算机知识\Docker&K8s\image\Docker网络.png)
+![Docker网络](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker&K8s/image/Docker%E7%BD%91%E7%BB%9C.png?raw=true)
 
 # 快速配置指南
 
