@@ -6,7 +6,7 @@ Kubernetes就是一个**生产级别的容器编排平台和集群管理系统**
 
 # Kubernetes的基本架构
 
-![图片](D:\githubRepository\knowledge-base\计算机知识\Docker&K8s\image\k8s架构.png)
+![k8s架构.png](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker&K8s/image/k8s%E6%9E%B6%E6%9E%84.png?raw=true)
 
 Kubernetes采用了现今流行的“**控制面/数据面**”（Control Plane / Data Plane）架构，集群里的计算机被称为“**节点**”（Node），可以是实机也可以是虚机。
 
@@ -26,7 +26,7 @@ Kubernetes的节点内部也具有复杂的结构，是由很多的模块构成�
 
 Master里有4个组件，分别是**apiserver**、**etcd**、**scheduler**、**controller-manager**。
 
-![图片](D:\githubRepository\knowledge-base\计算机知识\Docker&K8s\image\K8sMaster.png)
+![K8sMaster.png](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker&K8s/image/K8sMaster.png?raw=true)
 
 **apiserver**是Master节点——同时也是整个Kubernetes系统的**唯一入口**，它对外公开了一系列的RESTful API，并且加上了验证、授权等功能，所有其他组件都只能和它直接通信，可以说是Kubernetes里的联络员。
 
@@ -40,7 +40,7 @@ Master里有4个组件，分别是**apiserver**、**etcd**、**scheduler**、**c
 
 Node里的3个组件分别是**kubelet**、**kube-proxy**、**container-runtime**
 
-![图片](D:\githubRepository\knowledge-base\计算机知识\Docker&K8s\image\k8sNode.png)
+![k8sNode.png](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/Docker&K8s/image/k8sNode.png?raw=true)
 
 **kubelet**是Node的代理，负责管理Node相关的绝大部分操作，Node上只有它能够与apiserver通信，实现状态报告、命令下发、启停容器等功能，相当于是Node上的一个“小管家”。
 
