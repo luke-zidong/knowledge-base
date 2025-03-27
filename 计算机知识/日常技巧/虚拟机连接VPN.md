@@ -8,23 +8,23 @@
 
 ## Virtualbox配置Host-only网卡
 
-![image-20250327204253381](C:\Users\lizid\AppData\Roaming\Typora\typora-user-images\image-20250327204253381.png)
+![VBOX网卡.png](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/%E6%97%A5%E5%B8%B8%E6%8A%80%E5%B7%A7/images/VBOX%E7%BD%91%E5%8D%A1.png?raw=true)
 
 在工具里配置Host-Only网卡
 
-![image-20250327204333476](C:\Users\lizid\AppData\Roaming\Typora\typora-user-images\image-20250327204333476.png)
+![VBOX虚拟机配置.png](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/%E6%97%A5%E5%B8%B8%E6%8A%80%E5%B7%A7/images/VBOX%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE.png?raw=true)
 
 配置当前虚拟机网络，选择Host-Only网卡。
 
 ## 宿主机配置VPN
 
-![image-20250327204002608](C:\Users\lizid\AppData\Roaming\Typora\typora-user-images\image-20250327204002608.png)
+![clash配置.png](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/%E6%97%A5%E5%B8%B8%E6%8A%80%E5%B7%A7/images/clash%E9%85%8D%E7%BD%AE.png?raw=true)
 
 使用Clash配置VPN，开启**系统代理**和**局域网代理**
 
 ## 查询并保存代理ip和port
 
-![image-20250327204549322](C:\Users\lizid\AppData\Roaming\Typora\typora-user-images\image-20250327204549322.png)
+![ifconfig.png](https://github.com/luke-zidong/knowledge-base/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/%E6%97%A5%E5%B8%B8%E6%8A%80%E5%B7%A7/images/ifconfig.png?raw=true)
 
 ipconfig 查询一下当前使用网卡的ip地址和clash前端界面上的port（一般是7890）
 
