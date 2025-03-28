@@ -40,11 +40,25 @@ vim ~/.bashrc
 
 ```bash
 export http_proxy=http://7.247.225.121:7890
+export HTTP_PROXY=http://7.247.225.121:7890
 export https_proxy=http://7.247.225.121:7890
+export HTTPS_PROXY=http://7.247.225.121:7890
 export no_proxy=127.0.0.1,localhost
-#minikube节点ip不需要代理
-#export no_proxy=localhost,127.0.0.1,10.96.0.0/12,192.168.59.0/24,192.168.49.0/24,192.168.39.0/24
+export NO_PROXY=127.0.0.1,localhost
 ```
+
+使用minikube节点ip不需要代理，具体配置如下：
+
+```bash
+export http_proxy=http://7.247.225.121:7890
+export HTTP_PROXY=http://7.247.225.121:7890
+export https_proxy=http://7.247.225.121:7890
+export HTTPS_PROXY=http://7.247.225.121:7890
+export no_proxy=localhost,127.0.0.1,10.96.0.0/12,192.168.59.0/24,192.168.49.0/24,192.168.39.0/24
+export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.59.0/24,192.168.49.0/24,192.168.39.0/24
+```
+
+
 
 # Docker配置代理
 
