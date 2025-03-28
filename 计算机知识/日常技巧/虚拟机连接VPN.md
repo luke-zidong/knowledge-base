@@ -39,8 +39,9 @@ vim ~/.bashrc
 追加如下命令
 
 ```bash
-export http_proxy="http://7.247.225.121:7890"
-export https_proxy="http://7.247.225.121:7890"
+export http_proxy=http://7.247.225.121:7890
+export https_proxy=http://7.247.225.121:7890
+export no_proxy=127.0.0.1,localhost
 ```
 
 # Docker配置代理
